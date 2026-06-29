@@ -5,21 +5,21 @@
 class Squadai < Formula
   desc "CLI tool that standardizes AI coding agent environments across a team"
   homepage "https://github.com/PedroMosquera/squadai"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PedroMosquera/squadai/releases/download/v0.5.0/squadai_0.5.0_darwin_amd64.tar.gz"
-      sha256 "c4881745a2b4d270ab067d13e8cf3e0c8e98572f4c657fde81272d5f38fb9665"
+      url "https://github.com/PedroMosquera/squadai/releases/download/v0.6.0/squadai_0.6.0_darwin_amd64.tar.gz"
+      sha256 "b4d9e025bb5786f7fcd8eff2bde17957ae9b4e4c325d4d5f42f5844038ffd827"
 
       define_method(:install) do
         bin.install "squadai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PedroMosquera/squadai/releases/download/v0.5.0/squadai_0.5.0_darwin_arm64.tar.gz"
-      sha256 "0e306148028d27d7ff47f028d4c63f815df5f57d2bf0f82ea8592b6cbd652be6"
+      url "https://github.com/PedroMosquera/squadai/releases/download/v0.6.0/squadai_0.6.0_darwin_arm64.tar.gz"
+      sha256 "6d9d3eab9cf4831e489cbe02fa7ee8d0d1bf59b0f52084f9a67f6b7edfb950d0"
 
       define_method(:install) do
         bin.install "squadai"
@@ -29,15 +29,15 @@ class Squadai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PedroMosquera/squadai/releases/download/v0.5.0/squadai_0.5.0_linux_amd64.tar.gz"
-      sha256 "81714851467c4c1a883fe3d1895b477d8f6748ee28da27cdc8ab9eea1e04e040"
+      url "https://github.com/PedroMosquera/squadai/releases/download/v0.6.0/squadai_0.6.0_linux_amd64.tar.gz"
+      sha256 "a1438805c5919f28ff8169f624bd4db101ce3ac77f780ef03cb4e05216fd6a33"
       define_method(:install) do
         bin.install "squadai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PedroMosquera/squadai/releases/download/v0.5.0/squadai_0.5.0_linux_arm64.tar.gz"
-      sha256 "fd9f5c40a5aced9c9d8b10f5f3e696a080deb82d9f1fe586734d25aec9a1e65a"
+      url "https://github.com/PedroMosquera/squadai/releases/download/v0.6.0/squadai_0.6.0_linux_arm64.tar.gz"
+      sha256 "31b9ff64bd662bf1550747296cfbe4d65f8dc1ed60016febbd9a28c6e11274c6"
       define_method(:install) do
         bin.install "squadai"
       end
