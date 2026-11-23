@@ -1,8 +1,8 @@
 class Tokenjar < Formula
   desc "Menu bar app showing how much of each AI plan's usage limit is left"
   homepage "https://github.com/PedroMosquera/tokenjar"
-  url "https://github.com/PedroMosquera/tokenjar/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "bd9e26735e4deea16b1fbb3e7baf4099bd89ee3d814130a08225d3d0c39c9f4c"
+  url "https://github.com/PedroMosquera/tokenjar/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "5eac36b98df1188a215ac1d9724e409dbda757517d4d869e67434a579a2fafc2"
   license "MIT"
 
   # Swift 6.2 ships with Command Line Tools 26, which need macOS 15.6 or later.
